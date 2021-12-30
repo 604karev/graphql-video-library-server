@@ -22,8 +22,7 @@ app.use('/graphql', graphqlHTTP({
 }));
 
 
-
-app.listen(PORT, err => {
+app.listen(process.env.PORT || PORT, err => {
         err ? console.log(err) : console.log('Server started')
     }
 );
